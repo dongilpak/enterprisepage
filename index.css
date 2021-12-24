@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header.header {
+    width: 100%;
+    height: 12rem;
+    background-color: #fff;
+}
+
+.header .header__group {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem 1rem;
+}
+
+.header__group .header__title a {
+    font: bold 2.4rem/1 'arial';
+}
+
+.header__group nav.nav__group {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header__group .nav__group ul {
+    display: flex;
+}
+
+.header__group .nav__group ul.gnb {
+    margin-right: 3rem;
+}
+
+.header__group .nav__group ul.gnb li a {
+    font: 1.2rem/1 'arial';
+    color: #aaa;
+    margin-left: 1.5rem;
+}
+
+.header__group .nav__group ul.util li a {
+    font: normal 1.6rem/1 'arial';
+    padding: 2rem 3rem;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.header__group .nav__group ul.util li a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+figure.intro {
+    width: 100%;
+    height: calc(100vh - 12rem);
+    position: relative;
+    background: #000;
+    padding-top: 25rem;
+    overflow: hidden;
+}
+
+figure.intro video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+figure.intro .inner {
+    width: 118rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+figure.intro .inner .intro__title {
+    font: 12rem/1 'arial';
+    color: #fff;
+}
+
+figure.intro .inner .intro__para {
+    font: 1.6rem/1.4 'arial';
+    color: #888;
+    margin: 1.5rem 0 5rem 0;
+}
+
+figure.intro .inner .viewBtn {
+    display: inline-block;
+    width: 40rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font: bold 1.1rem/1 'arial';
+    border: 1px solid #ddd;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+figure.intro .inner .viewBtn:hover {
+    background-color: #fff;
+    color: #000;
+}
