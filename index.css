@@ -13,7 +13,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #777;
 }
 
 html {
@@ -96,7 +96,7 @@ figure.intro video {
     left: 0;
 }
 
-figure.intro .inner {
+div.inner {
     width: 118rem;
     margin: 0 auto;
     position: relative;
@@ -127,4 +127,90 @@ figure.intro .inner .viewBtn {
 figure.intro .inner .viewBtn:hover {
     background-color: #fff;
     color: #000;
+}
+
+main.newsGroup {
+    padding: 20rem 0;
+}
+
+main.newsGroup .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.newsGroup .inner h1 {
+    font: bold 2.5rem/1 'arial';
+    margin-bottom: 5rem;
+}
+
+main.newsGroup .inner section {
+    display: flex;
+    justify-content: space-between;
+}
+
+main.newsGroup .inner section .newsItem {
+    width: 25%;
+}
+
+main.newsGroup .inner section .newsItem:not(:last-child) {
+    margin-right: 2rem;
+}
+
+main.newsGroup .inner section .newsItem img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+main.newsGroup .inner section .newsItem h2.newsTitle {
+    padding: 1.5rem 0;
+    font: bold 1.5rem/1 'arial';
+}
+
+main.newsGroup .inner section .newsItem p {
+    font: normal 1.4rem/1.3 'arial';
+    color: #777;
+}
+
+footer {
+    background-color: #333;
+    color: #777;
+    padding: 12rem 0;
+}
+
+footer .inner .upper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #777;
+    padding-bottom: 2rem;
+}
+
+footer .inner .upper h1 {
+    font: bold 2.5rem/1 'arial';
+}
+
+footer .inner .upper ul {
+    display: flex;
+}
+
+footer .inner .upper ul li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+footer .inner .upper ul li a {
+    font: bold 1.6rem/1 'arial';
+}
+
+footer .inner .lower {
+    margin-top: 2rem;
+}
+
+footer .inner .lower address {
+    font: normal 1.2rem/1.2 'arial';
+    margin-bottom: 2rem;
+}
+
+footer .inner .lower p {
+    font: normal 1.2rem/1.2 'arial';
 }
